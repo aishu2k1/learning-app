@@ -1,0 +1,55 @@
+<div class="page-container">
+    <h1>Don't have an account yet?</h1>
+    <h3>Signup for free to get access to unlimited resources</h3>
+    <form  #subform="ngForm" (ngSubmit)="submitted(subform)">
+        <div class="signupbox" *ngIf="signup">
+            <div class="signup active">Sign up </div>
+            <div class="login" on-click="changesign()"> Login</div>
+                <div class="name">
+                    <input [(ngModel)]="fname" name="fname" type="text" class="fname" required placeholder="First Name"/>
+                    <div  *ngIf="!fname?.valid && (fname?.dirty || fname?.touched)">
+                        Required
+                     </div>
+                    <div *ngIf="!lname?.valid && (lname?.dirty || lname?.touched)">
+                        Required
+                    </div>
+                    <input [(ngModel)]="lname" name="lname" type="text" class="lname" required placeholder="Last Name"/>
+                </div>
+                <input [(ngModel)]="email" name="email" type="text" class="email" required placeholder="Email Address"/>
+                <input [(ngModel)]="password" name="password" type="password" class="password" required placeholder="Create Password"/>
+                <div class="message1">{{msg1}}</div>
+                <button type="submit">Register</button>
+        </div>
+        <div class="loginbox" *ngIf="!signup">
+            <div class="signup" on-click="changesign()">Sign up </div>
+            <div class="login active"> Login</div>
+            <input [(ngModel)]="userName" name="userName" type="text" class="userName" required placeholder="Email Address"/>
+            <input [(ngModel)]="passWord" name="passWord" type="password" class="passWord" required placeholder="Password"/>
+            <div class="message2">{{msg2}}</div>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+</div>
+<!-- <div class="signupbox" *ngIf="signup">
+            <div class="signup active">Sign up </div>
+            <div class="login" on-click="changesign()"> Login</div>
+            <form #subform="ngForm" (ngSubmit)="createUser(subform)" class="signupform" method="post" action="http://localhost:8080/sign">
+                <div class="name">
+                    <input [(ngModel)]="fname" name="fname" type="text" class="fname" placeholder="First Name"/>
+                    <input [(ngModel)]="lname" name="lname" type="text" class="lname" placeholder="Last Name"/>
+                </div>
+                <input [(ngModel)]="email" name="email" type="text" class="email" placeholder="Email Address"/>
+                <input [(ngModel)]="spassword" name="spassword" type="text" class="password" placeholder="Create Password"/>
+                <button type="submit" (click)="sendData1(fname,lname,email,spassword)">Register</button>
+            </form>
+        </div> -->
+        <!-- <div #subform2="ngForm" (ngSubmit)="login(subform2)" class="loginbox" *ngIf="!signup">
+            <div class="signup" on-click="changesign()">Sign up </div>
+            <div class="login active"> Login</div>
+            <form class="loginform" method="post" action="http://localhost:8080/signin">
+                <input [(ngModel)]="uname" name="uname" type="text" class="lemail" placeholder="Email Address"/>
+                <input [(ngModel)]="lpassword" name="lpassword" type="text" class="lpassword" placeholder="Password"/>
+                <button type="submit" (click)="sendData2(uname,lpassword)">Login</button>
+            </form>
+        </div> -->
+        

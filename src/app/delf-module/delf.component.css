@@ -1,0 +1,62 @@
+div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 70px;
+    color: #141850;
+}
+
+h1 {
+    position: absolute;
+    top: 60px;
+    color: #494E6B;
+}
+
+.diagonal {
+    position: absolute;
+    top: 140px;
+    width: 100%;
+}
+
+.B2, .B1, .A2, .A1 {
+    background-color: rgba(152, 94, 109, 1);
+    color: #FFFFFF;
+    height: 90px;
+    width: 175px;
+    margin: 30px;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.A1 {
+    position: absolute;
+    left: 0px;
+    top: 300px;
+}
+
+.A2 {
+    position: absolute;
+    left: 320px;
+    top: 200px;
+}
+
+.B1 {
+    position: absolute;
+    left: 640px;
+    top: 100px;
+}
+
+.B2 {
+    position: absolute;
+    left: 960px;
+    top: 0px;
+}
+
+.A1:hover, .A2:hover, .B1:hover, .B2:hover {
+    background-color: rgba(152, 94, 109, 0.8);
+    cursor: pointer;
+}

@@ -1,0 +1,31 @@
+<div class="bar-container">
+    <div class="logo">
+        <img src="../../assets/logo.png" alt="Soutien Scolaire"/>
+    </div>
+
+    <div class="home">
+        <a href="/home">Home <i class="fa fa-home" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="categories">
+        <div class="categories-text">Categories</div>
+        <div class="categories-content">
+            <a href="/cbse">CBSE</a>
+            <a href="/icse">ICSE</a>
+            <a href="/delf">Delf Prep</a>
+            <a href="/pc">Podcasts and Stories</a>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact-text">Contact</div>
+        <div class="contact-content">
+            <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+            <a href="https://in.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</a>
+        </div>
+    </div>
+    
+    <button id="sign" class="sign" *ngIf="!loggedIn" on-click="routesign()">Sign in/Sign up</button>
+    <div class="user" *ngIf="loggedIn">Bienvenue!</div>
+</div>

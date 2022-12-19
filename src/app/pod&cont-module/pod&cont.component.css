@@ -1,0 +1,56 @@
+.pcontainer, .ccontainer {
+    position: absolute;
+    top: 95px;
+    width: 50%;
+    margin: 0;
+    height: 90.5%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1.p {
+    color: rgba(152, 94, 109, 0.8);
+}
+
+h1.c {
+    color: #494E6B;
+}
+ 
+.pcontainer {
+    left: 70px;
+}
+
+.ccontainer {
+    right:0;
+}
+
+li {
+    list-style-type: none;
+    margin: 70px;
+}
+
+li.pod a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(73, 78, 107, 1);
+}
+
+li.pod a:hover {
+    color: rgba(73, 78, 107, 0.5);
+}
+
+h1 {
+    margin: 50px;
+}
+
+li.conte a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(152, 94, 109, 0.8);
+}
+
+li.conte a:hover {
+    color: rgba(152, 94, 109, 0.4);
+}

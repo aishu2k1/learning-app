@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+div.vertical {
+    position: fixed;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    width: 70px;
+    background-color: #985E6D;
+    left:0;
+    height: 100%;
+    
+}
+
+navbar {
+    z-index: 1;
+}
+
+div.container, div.pcontainer, div.ccontainer, div.page-container {
+    font-family: 'Signika Negative', sans-serif;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

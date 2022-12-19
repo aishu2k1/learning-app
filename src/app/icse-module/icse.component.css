@@ -1,0 +1,47 @@
+div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 70px;
+    color: #141850;
+}
+
+h1 {
+    position: absolute;
+    top: 60px;
+    color: #494E6B;
+}
+
+div.classes_col1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 160px;
+    left: 15%;
+}
+
+div.classes_col2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 160px;
+    left: 65%;
+}
+
+.class5, .class6, .class7, .class8, .class9, .class10 {
+    background-color: rgba(152, 94, 109, 1);
+    color: #FFFFFF;
+    height: 90px;
+    width: 175px;
+    margin: 30px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.class5:hover, .class6:hover, .class7:hover, .class8:hover, .class9:hover, .class10:hover {
+    background-color: rgba(152, 94, 109, 0.8);
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 70px;
+    color: #141850;
+}
+
+h1 {
+    position: absolute;
+    top: 10px;
+    color: #494E6B;
+}
+
+table {
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    border: 1px solid;
+}
